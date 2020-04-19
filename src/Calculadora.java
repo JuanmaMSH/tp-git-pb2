@@ -6,9 +6,9 @@ public static void main(String[] args) {
 	Integer opcion;
 	Integer resultado;
 	do{
-		System.out.println("Ingrese su operación /n 1 para sumar /n 2 para restar /n 3 para multiplicar /n 4 para dividir");
+		System.out.println("Ingrese su operación /n 1 para sumar /n 2 para restar /n 3 para multiplicar /n 4 para dividir /n 5 para potencia /n 6 para porcentaje");
 		opcion = teclado.next();
-	}while(opcion < 1 && opcion > 4);
+	}while(opcion < 1 && opcion > 6);
 	System.out.println("Ingrese el primer numero");
 	a = teclado.next();
 	System.out.println("Ingrese el segundo numero");
@@ -27,6 +27,11 @@ public static void main(String[] args) {
 		case 4:
 			resultado = a / b;
 			break;
+		case 5:
+			resultado = a ^ b;
+			break;
+		case 6:
+			resultado = a * b / 100;
 	}
 	System.out.println("El resultado es " + resultado.toString());
 	}
