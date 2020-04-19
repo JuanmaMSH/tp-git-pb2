@@ -20,17 +20,38 @@ public class Calculadora{
         b = teclado.nextInt();
  
         if(opcion.equals(3)){
-            resultado = a + b;
+            resultado = sumar(a,b);
         }else if(opcion.equals(2)){
-            resultado = a - b;
+            resultado = restar(a, b);
         }else if(opcion.equals(1)){
-            resultado = a * b;
+            resultado = multiplicar(a, b);
         }else{
-            resultado = a / b;
+            resultado = dividir(a, b);
         }
- 
+
         System.out.println("El resultado es "+ resultado.toString());
- 
+
         teclado.close();
     }
+
+    private static int sumar(int a, int b){
+
+        return a + b;
+    }
+
+    private static int restar(int a, int b){
+
+        return a - b;
+    }
+
+    private static int multiplicar(int a, int b){
+
+        return a * b;
+    }
+    
+    private static int dividir(int a, int b){
+
+        return a / b;
+    }
+
 }
